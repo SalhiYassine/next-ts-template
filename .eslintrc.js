@@ -4,10 +4,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "plugin:@next/next/recommended",
+    "eslint:recommended",
     "plugin:react/recommended",
     "google",
     "prettier",
-    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -21,6 +23,10 @@ module.exports = {
   rules: {
     "require-jsdoc": 0,
     "react/react-in-jsx-scope": 0,
+    "no-console": 1,
+    "react/jsx-uses-vars": 2,
+    "no-undef": 0,
+    "": 0,
   },
   settings: {
     react: {
