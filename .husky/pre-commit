@@ -3,6 +3,13 @@
 
 echo '🏗️👷 Styling, testing and building your project before committing'
 
+# Apply Prettier standards
+npm run format ||
+(
+    echo '🤢🤮🤢🤮 Even I cant format that - Your styling looks disgusting. 🤢🤮🤢🤮
+            Fix your damn code yourself.';
+    false;
+)
 # Check Prettier standards
 npm run check-format ||
 (
